@@ -12,7 +12,6 @@ public class ClientDemo {
         try {
             session.beginTransaction();
 
-            // Create Vehicle, Car, and Truck objects
             Car car = new Car();
             car.setName("Sedan");
             car.setType("Car");
@@ -27,7 +26,6 @@ public class ClientDemo {
             truck.setColor("Blue");
             truck.setLoadCapacity(10000);
 
-            // Save the objects
             session.save(car);
             session.save(truck);
 
